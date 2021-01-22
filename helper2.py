@@ -1,5 +1,5 @@
-# s = 'Rinko Shirokane'
-s = open('template').read()
+s = 'Rinko Shirokane'
+# s = open('template').read()
 def is_upper(ch):
 	return ord(ch) >= (64 + 1) and ord(ch) <= (64 + 26)  
 
@@ -8,8 +8,8 @@ def is_lower(ch):
 
 def tab(string, indent):
 	if(len(string) > 0):
-		# print('\t' * indent + string)
-		print(string, end='')
+		print('\t' * indent + string)
+		# print(string, end='')
 
 def first_element(array):
 	return array[0]
@@ -123,4 +123,3 @@ for a in range(len(alphabet)):
 		counter += (alphabet[a][0] - alphabet[a-1][0])
 	tab(p + '.', 0)
 tab('<' * counter, 0)
-print(sym)
